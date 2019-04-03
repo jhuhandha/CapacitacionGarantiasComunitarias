@@ -1,4 +1,4 @@
-# CapacitacionGarantiasComunitarias
+# Capacitación Garantias Comunitarias
 - LET vs VAR
 - Templates Literales
 - Destructuración de Objetos
