@@ -1,5 +1,5 @@
 # Capacitación Garantias Comunitarias
-1. Repazo JAVASCRIP <br>
+1. Repazo JAVASCRIPT <br>
 http://es6-features.org
 - LET vs VAR
 - Templates Literales
