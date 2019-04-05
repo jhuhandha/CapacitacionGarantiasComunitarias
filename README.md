@@ -22,7 +22,7 @@ http://es6-features.org
 - Uso de servicios de forma global
 
 
-Links para descargar
-https://code.visualstudio.com/
-https://nodejs.org/es/
-https://github.com/coreybutler/nvm-windows
+Links para descargar <br>
+https://code.visualstudio.com/ <br>
+https://nodejs.org/es/ <br>
+https://github.com/coreybutler/nvm-windows <br>
