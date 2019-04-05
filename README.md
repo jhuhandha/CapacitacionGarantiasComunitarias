@@ -26,3 +26,4 @@ Links para descargar <br>
 https://code.visualstudio.com/ <br>
 https://nodejs.org/es/ <br>
 https://github.com/coreybutler/nvm-windows <br>
+https://git-scm.com/ <br>
