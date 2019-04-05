@@ -20,3 +20,9 @@ http://es6-features.org
 - Consumo de APIS
 - Estructura del proyecto de Angular
 - Uso de servicios de forma global
+
+
+Links para descargar
+https://code.visualstudio.com/
+https://nodejs.org/es/
+https://github.com/coreybutler/nvm-windows
