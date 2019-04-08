@@ -1,0 +1,21 @@
+<div class="row" id="ads">
+  <!-- Category Card -->
+  <div class="col-md-4" *ngFor="let item of leagues" <div class="card rounded">
+    <div class="card-image">
+      <span class="card-notify-badge">{{item.country}}</span>
+      <span class="card-notify-year">{{item.season}}</span>
+      <img class="img-fluid" [src]="item.logo" alt="Alternate Text" />
+    </div>
+    <div class="card-image-overlay m-auto">
+      <span class="card-detail-badge">{{item.season_start}}</span>
+      <span class="card-detail-badge">{{item.season_end}}</span>
+    </div>
+    <div class="card-body text-center">
+      <div class="ad-title m-auto">
+        <h5>{{item.name}}</h5>
+      </div>
+    </div>
+  </div>
+</div>
+
+<router-outlet></router-outlet>
