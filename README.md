@@ -20,3 +20,14 @@ http://es6-features.org
 - Consumo de APIS
 - Estructura del proyecto de Angular
 - Uso de servicios de forma global
+
+
+Links para descargar <br>
+https://code.visualstudio.com/ <br>
+https://nodejs.org/es/ <br>
+https://github.com/coreybutler/nvm-windows <br>
+https://git-scm.com/ <br>
+
+API para el reto #1 <br>
+https://www.api-football.com/documentation#demo <br>
+https://www.api-football.com/demo/
