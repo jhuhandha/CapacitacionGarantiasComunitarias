@@ -1,0 +1,18 @@
+<mat-toolbar>
+  <span>My Application</span>
+
+  <mat-menu #appMenu="matMenu">
+    <button routerLink="/productos" mat-menu-item>Productos</button>
+    <button routerLink="/categorias" mat-menu-item>Categorias</button>
+    <button routerLink="/admin/cliente" mat-menu-item>Clientes</button>
+    <button routerLink="/permisos/roles" mat-menu-item>Roles</button>
+    <button routerLink="/permisos/modulos" mat-menu-item>Modules</button>
+  </mat-menu>
+  
+  <button mat-icon-button [matMenuTriggerFor]="appMenu">
+    <mat-icon>more_vert</mat-icon>
+  </button>
+</mat-toolbar>
+
+
+<router-outlet></router-outlet>
