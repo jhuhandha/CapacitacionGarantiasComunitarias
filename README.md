@@ -34,7 +34,7 @@
 - https://angular.io/guide/lifecycle-hooks
 
 Links para descargar <br>
-Sesión 1
+Sesión 1 <br>
 https://code.visualstudio.com/ <br>
 https://nodejs.org/es/ <br>
 https://github.com/coreybutler/nvm-windows <br>
