@@ -26,11 +26,12 @@
 - Rutas y navegación
 - Servicios
 - Componentes visuales
-- Componentes nativos
-- Mapas
+- Componentes nativos 
+- Mapas https://www.mapbox.com/
 - Notificaciones PUSH
 - Storage
-- CRUD LARAVEL
+- CRUD LARAVEL 
+- https://angular.io/guide/lifecycle-hooks
 
 Links para descargar <br>
 Sesión 1
