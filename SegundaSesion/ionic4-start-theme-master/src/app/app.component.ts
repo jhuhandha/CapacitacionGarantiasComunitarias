@@ -40,6 +40,13 @@ export class AppComponent {
         url: '/settings',
         direct: 'forward',
         icon: 'cog'
+      },
+
+      {
+        title: 'Posts',
+        url: '/posts',
+        direct: 'root',
+        icon: 'bookmarks'
       }
     ];
 

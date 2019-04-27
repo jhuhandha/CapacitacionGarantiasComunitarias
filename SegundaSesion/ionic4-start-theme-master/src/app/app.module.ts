@@ -18,7 +18,6 @@ import { SearchFilterPageModule } from './pages/modal/search-filter/search-filte
 // Components
 import { NotificationsComponent } from './components/notifications/notifications.component';
 
-
 @NgModule({
   declarations: [AppComponent, NotificationsComponent],
   imports: [
