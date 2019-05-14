@@ -6,6 +6,7 @@ const mongoose = require('mongoose');
 const fileUpload = require('express-fileupload');
 const socketIO = require("socket.io");
 const http = require("http");
+const OneSignal = require('onesignal-node'); 
 
 const app = express();
 
@@ -27,6 +28,14 @@ app.use(bodyParser.urlencoded({
 // parse application/json
 app.use(bodyParser.json());
 
+var myClient = new OneSignal.Client({      
+    userAuthKey: 'Y2JiYzdhNTEtNDdmZi00ZDQxLTg5MTItMDYzMTk2NTk5ZTc5',      
+    // note that "app" must have "appAuthKey" and "appId" keys      
+    app: { appAuthKey: 'MDViYzcyZmEtOTg3OC00YTI1LTlhMTktNDAxOTE2NmNjOTJl', appId: 'd1bc285f-b393-497b-801d-3cd0f92b9749' }      
+ });   
+ 
+global.myClient = myClient;
+
 app.get('/', function (req, res) {
     res.send('Bienvenido API Garantias Comunitarias');
 });
@@ -45,6 +54,8 @@ global.io = io;
 
 require('./socket/server.js');
 
+
+
 server.listen(process.env.PORT, function () {
-    console.log('Servidor iniciado');
+    console.log('Servidor iniciado', process.env.PORT);
 });

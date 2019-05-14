@@ -1,43 +1,62 @@
 const mongoose = require('mongoose');
+const uniqueValidator = require('mongoose-unique-validator');
 
 var Schema = mongoose.Schema;
 
 var usuarioSchema = new Schema({
-    nombre : {
+    nombre: {
         type: String,
-        required: [true, "El nombre es requerido"]
+        required: [true, 'El campo nombre es requerido']
     },
-    apellido : {
+    apellido: {
         type: String,
-        required: true
+        required: [true, 'El campo apellido es requerido']
     },
-    telefono : {
+    correo: {
         type: String,
-        required: false
+        required: [true, 'El campo correo es requerido']
     },
-    correo : {
+    telefono: {
         type: String,
-        required: true,
-    },
-    usuario : {
-        type: String,
-        required: true
-    },
-    clave : {
-        type: String
-    },
-    estado : {
-        type: Boolean,
         required: false,
-        default: true
+        maxlength: [15, 'El telefono no debe superar los 15']
     },
-    google_id : {
-        type: String
+    google_id: {
+        type: String,
+        unique: false
     },
-    created_at :{
-        type: Date,
-        default :  Date.now
-    }
+    push_id: {
+        type: String,
+        unique: false
+    },
+    socket_id: {
+        type: String,
+        unique: false
+    },
+    usuario: {
+        type: String,
+        unique: true,
+        required: [true, 'El campo usuario es requerido']
+    },
+    clave: {
+        type: String,
+        required: [true, 'El campo clave es requerido']
+    },
+    ingresos: [{
+        fecha: {
+            type: Date,
+            default: Date.now
+        }
+    }]
 });
 
-module.exports = mongoose.model('Usuario', usuarioSchema);
+usuarioSchema.plugin(uniqueValidator, {
+    message: 'Error, el campo {PATH} es unico.'
+});
+
+var virtual = usuarioSchema.virtual('nombrecompleto');
+virtual.get(function () {
+  return this.nombre + ' ' + this.apellido;
+});
+
+module.exports = mongoose.model('Usuario', usuarioSchema, 'usuario');
