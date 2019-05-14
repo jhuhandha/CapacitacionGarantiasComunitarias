@@ -46,5 +46,15 @@ https://cordova.apache.org/ <br>
 https://developer.android.com/studio/?hl=es-419 <br>
 https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html <br>
 
+Sesión 3 <br>
+https://www.npmjs.com/package/bcrypt <br>
+https://www.npmjs.com/package/body-parser <br>
+https://www.npmjs.com/package/express <br>
+https://www.npmjs.com/package/express-fileupload <br>
+https://www.npmjs.com/package/jsonwebtoken <br>
+https://mongoosejs.com/ <br>
+https://socket.io/ <br>
+https://www.npmjs.com/package/ngx-socket-io
+
 API para el reto <br>
 https://www.themoviedb.org/
